@@ -1,0 +1,29 @@
+<br><br><br><br>
+<!-- <app-feedback></app-feedback> -->
+<!-- <br><br><br><br><br><br><br> -->
+<section id="testimonials">
+    <div class="testimonial-heading">
+        <span>Feedback</span>
+        <h4>Clients Says</h4>
+    </div>
+    
+    <div class="testimonial-box-container" *ngFor="let f of feedback">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    
+                    <div class="profile-img">
+                        <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="client-comment">
+                <p>{{f.feedbackText}}</p>
+            </div>
+        </div>
+       </div>
+  </section>
+  
+  <br>
+  <app-footer></app-footer>

@@ -1,0 +1,30 @@
+<!-- Services Content -->
+<br><br><br><br>
+<!-- Packages Section-->
+<div class="container-fluid">
+    <div class="grid">
+        <div class="row">
+            <div class="secondc">
+                <div class="skewed" *ngFor="let td of travelPlans">
+                    <div class="text">
+                        <small>Book ID:- {{td.planId}}</small>
+                        <h1>{{td.planTitle}}</h1>
+                        <p>{{td.planDescription}}</p>
+                        <h3 class="fw-bold">Price:- <span>{{td.planPrice}}</span></h3>
+                        <a routerLink="/signup" routerLinkActive="active">Book Now</a>
+                    </div>
+                    <div class="image">
+                        <div>
+                            <img src="assets/img/pune-service.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class=mid-line>
+<br>
+<app-footer></app-footer>
+<!-- <app-offers></app-offers> -->

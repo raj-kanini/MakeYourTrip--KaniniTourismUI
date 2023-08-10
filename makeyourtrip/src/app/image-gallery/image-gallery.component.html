@@ -1,0 +1,15 @@
+<!-- image-gallery.component.html -->
+<br><br><br><br><br><br><br>
+<div class="container">
+<div>
+  <label for="locationName">Location Name:</label>
+  <input type="text" id="locationName" [(ngModel)]="imgData.locationName" placeholder="Enter location name">
+</div>
+
+<div>
+  <label for="imageUrl">Image Upload:</label>
+  <input type="file" id="imageUrl" (change)="onFileSelected($event)">
+</div>
+
+<button (click)="submitData()">Submit</button>
+</div>

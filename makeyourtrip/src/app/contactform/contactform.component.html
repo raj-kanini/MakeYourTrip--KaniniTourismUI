@@ -1,0 +1,46 @@
+<br><br><br>
+<section class="contact">
+<div>
+    <h1>Contact Us</h1>
+    <p>Feel free to send us a message about
+        anything you might need help with.
+        We would love to hear from you!
+    </p>
+    <form id="contact-form">
+        <label for="user_name">Name</label>
+        <input 
+        type="text"
+        id="user_name"
+        name="user_name"
+        placeholder="Your name..."
+        [(ngModel)]="addContact.name"
+        required/>
+    </form>
+
+    <label for="user_email">Email</label>
+    <input 
+    type="email"
+    id="user_email"
+    name="user_name"
+    placeholder="example@gmail.com"
+    [(ngModel)]="addContact.email"
+    required
+    />
+
+    <label for="message">Message</label>
+    <textarea
+    name="message"
+    id="message"
+    placeholder="Your message..."
+    [(ngModel)]="addContact.message"
+    required
+    ></textarea>
+
+    <button type="submit" (click)="addContactt()" class="submit-btn">
+        <i class="bi bi-send-fill"></i>
+    </button>
+    
+</div>
+</section>
+
+<app-footer></app-footer>

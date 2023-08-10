@@ -1,0 +1,35 @@
+<br><br><br><br>
+<div class="container-fluid text-center">
+ <h3>Admin Panel</h3>
+</div><br><br>
+<div class="container">
+  <div class="row">
+    <!-- First Column (on the left) -->
+    <div class="col-sm-8">
+      <div class="container">
+        <div class="card mb-3" style="width: 15rem;" *ngFor="let t of travelAgents">
+          <!-- <img src="../../assets/img/profile.png" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">{{ t.userName }}</h5>
+            <p class="card-text">Status: {{ t.isApproved }}</p>
+            <button type="button" class="btn btn-primary" (click)="setActiveStatus(t.travelAgentId)">Active</button>
+            &nbsp;
+            <button type="button" class="btn btn-dark" (click)="setInactiveStatus(t.travelAgentId)">InActive</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Column (on the right) -->
+    &nbsp;
+    <div class="col-sm-2"><br>
+      <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+      <br><br>
+      <button type="button" class="btn btn-dark" routerLink="/gallery">Add Image</button>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+

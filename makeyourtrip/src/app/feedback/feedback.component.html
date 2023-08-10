@@ -1,0 +1,24 @@
+
+<br><br><br><br><br>
+<div class="container">
+  <h3>Feedback Form</h3>
+  <form (submit)="submitFeedback()">
+    <div class="mb-3">
+      <label for="userId" class="form-label">User ID</label>
+      <input type="number" class="form-control" id="userId" [(ngModel)]="feedback.userId" name="userId">
+    </div>
+    <div class="mb-3">
+      <label for="tripId" class="form-label">Trip ID</label>
+      <input type="number" class="form-control" id="tripId" [(ngModel)]="feedback.tripId" name="tripId">
+    </div>
+    <div class="mb-3">
+      <label for="feedbackText" class="form-label" >Feedback Message</label>
+      <textarea class="form-control" id="feedbackText" [(ngModel)]="feedback.feedbackText" name="feedbackText" placeholder="Enter Text..."></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="rating" class="form-label">Rating</label>
+      <input type="number" class="form-control" id="rating" [(ngModel)]="feedback.rating" name="rating">
+    </div>
+    <button type="submit" class="btn btn-dark">Submit Feedback</button>
+  </form>
+</div>

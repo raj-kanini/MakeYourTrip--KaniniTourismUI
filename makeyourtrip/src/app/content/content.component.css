@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --text-color: #fff;
+    --bg-color: #000;
+    --main-color :#ffa343;
+    
+    --h1-font: 6rem;
+    --h2-font: 3 rem;
+    --p-font: 1rem;
+}
+
+section{
+    padding: 70px 17% 60px;
+}
+
+/* Feature Content*/
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3 rem;
+}
+
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.row-img img{
+    width: 100%;
+    display: block;
+    transition: transform 0.7s;
+}
+
+.row-img img:hover{
+    transform: scale(1.2);
+}
+
+.feature-content h4{
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.feature-content h4:hover{
+    color: grey;
+}
+
+/* .holiday{
+    display: grid;
+    grid-template-columns: repeat(300, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+
+.holiday-img img{
+    width: 100%;
+    border-radius: 10px;
+} */
+
+.holiday {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    align-items: center;
+    gap: 2rem; 
+}
+
+.holiday-img img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.holiday-text h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.holiday-text h2{
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.holiday-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 13px 40px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* hr.mid-line{
+    height: px;
+    width: 15cm;
+    background: black;
+} */
+
+
+
+.mid-line {
+    height: 3px;
+    width: 30%;
+    background-color: black;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    margin: 20px auto;
+  }
+  
+  

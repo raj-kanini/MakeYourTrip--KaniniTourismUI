@@ -1,0 +1,21 @@
+<!-- Tour Section -->
+<br><br>
+<section class="tour">
+    <div class="center-text">
+        <h2>Popular Tours</h2>
+    </div>
+
+    <div class="tour-content">
+    <div class="box" *ngFor="let m of images">
+        <img [src]="'data:image/png;base64,' + m.imageUrl" class="contentImg">
+        <h6>{{m.locationName}}</h6>
+        <h4>City of India</h4>
+    </div>
+ 
+</div>
+    <!-- <div class="center-btn">
+        <a href="#" class="btn">See Tours</a>
+    </div> -->
+</section>
+
+<app-footer></app-footer>

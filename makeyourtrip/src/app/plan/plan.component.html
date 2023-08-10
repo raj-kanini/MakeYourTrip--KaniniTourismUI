@@ -1,0 +1,36 @@
+<!-- components/plan/plan.component.html -->
+<br><br><br><br><br>
+<div class="container">
+    <h3>Add Plan</h3>
+    <form (submit)="submitPlan()">
+      <div class="mb-3">
+        <label for="planTitle" class="form-label">Plan Title</label>
+        <input type="text" class="form-control" id="planTitle" [(ngModel)]="plan.planTitle" name="planTitle">
+      </div>
+      <div class="mb-3">
+        <label for="planDescription" class="form-label">Plan Description</label>
+        <textarea class="form-control" id="planDescription" [(ngModel)]="plan.planDescription" name="planDescription"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="planImage" class="form-label">Plan Image URL</label>
+        <input type="text" class="form-control" id="planImage" [(ngModel)]="plan.planImage" name="planImage">
+      </div>
+      <div class="mb-3">
+        <label for="planPrice" class="form-label">Plan Price</label>
+        <input type="number" class="form-control" id="planPrice" [(ngModel)]="plan.planPrice" name="planPrice">
+      </div>
+      <div class="mb-3">
+        <label for="agentId" class="form-label">Agent ID</label>
+        <input type="number" class="form-control" id="agentId" [(ngModel)]="plan.agentId" name="agentId">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Plan</button>
+    </form>
+  </div>
+  <br>
+  <br>
+  
+  <div class="container">
+    <button type="button" class="btn btn-danger" id="logout" (click)="logout()">Logout</button>
+  </div>
+
+  <!-- <app-plan-card [plan]="plan"></app-plan-card> -->

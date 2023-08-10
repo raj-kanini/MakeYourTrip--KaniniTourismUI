@@ -1,0 +1,38 @@
+<br><br><br><br>
+<div class="container">
+    <h3>Book Form</h3>
+    <form>
+      <div class="mb-3">
+        <label for="tradeId" class="form-label">Booking ID</label>
+        <input type="number" class="form-control" id="tradeId" [(ngModel)]="trade.tradeId" name="tradeId">
+      </div>
+      <div class="mb-3">
+        <label for="totalprice" class="form-label">Booking Price</label>
+        <input type="text" class="form-control" id="totalprice" [(ngModel)]="trade.totalprice" name="totalprice">
+      </div>
+      <div class="mb-3">
+        <label for="bookingName" class="form-label">Booking Name</label>
+        <input type="text" class="form-control" id="bookingName" [(ngModel)]="trade.bookingName" name="bookingName">
+      </div>
+      <div class="mb-3">
+        <label for="bookingDate" class="form-label">Booking Date</label>
+        <input type="date" class="form-control" id="bookingDate" [(ngModel)]="trade.bookingDate" name="bookingDate">
+      </div>
+      <button  class="btn btn-dark" (click)="bookPackage()">Book Tour</button>
+    </form>
+  </div>
+  <hr>
+  <div class="container">
+  <div class="content" id="content"#content text-center>
+    <h3>Total Bill </h3>
+    <h5>Booking Id:-{{trade.tradeId}}</h5>
+    <h5>Booking Name:-{{trade.bookingName}}</h5>
+    <h5>Booking Price:-{{trade.totalprice}}</h5>
+    <h5>Booking Date:-{{trade.bookingDate}}</h5>
+
+  </div>
+  </div>
+
+  <div class="container">
+  <button type="button" class="btn btn-danger" id="logout" (click)="logout()">Logout</button>
+</div>

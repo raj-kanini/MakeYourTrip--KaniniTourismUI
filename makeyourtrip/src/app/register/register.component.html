@@ -1,0 +1,23 @@
+
+<br><br><br><br><br>
+<div class="container">
+    <div class="content">
+       <img src="https://res.cloudinary.com/debbsefe/image/upload/f_auto,c_fill,dpr_auto,e_grayscale/image_fz7n7w.webp" alt="header-image" class="cld-responsive">
+            <h1 class="form-title">Register Here</h1>
+            <form (ngSubmit)="registerUser()">
+               <input type="text" placeholder="User Name" name="userName" [(ngModel)]="user.userName" required>
+            <div class="beside">
+                <select id="role" name="role" [(ngModel)]="selectedRole">
+                    <option value="traveler">Traveller</option>
+                    <option value="travelAgent">Travel Agent</option>
+                    <option value="administrator">Administrator</option>    
+                  </select>
+            </div>
+                <input type="password" placeholder="NEW PASSWORD" name="newPassword" [(ngModel)]="user.password" required>
+                               <button type="button" (click)="registerUser()">Submit</button>
+            </form>
+        </div>
+ </div>
+
+ <br><br>
+ <app-footer></app-footer>
